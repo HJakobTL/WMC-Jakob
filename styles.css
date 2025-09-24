@@ -1,31 +1,71 @@
 /* Kommentar Test */
 h1 {
-    color: purple;
+    color: green;
     text-align: center;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Hack', monospace;
     width: 600px;
     padding: auto;
-    border: 5px solid purple;
     margin: auto;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: pink;
-    font-size: 24px;
-    color: black;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    position: sticky;
+    top: 0;
+
 }
 
-div {
-    padding: 10px;
-    border: 5px solid purple;
-    margin: 0;
+.topnav a {
+    float: left;
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #005e24;
+    color: black;
+}
+
+
+.topnav a.active {
+    background-color: #005e24;
+    color: black;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('path/to/Hack-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Hack', monospace;
+    margin: 20px;
+    background-color: black;
+    font-size: 24px;
+    color: green;
+}
+
+.div-boxen {
+    margin: auto;
+    padding: auto;
+    border: 5px solid green;
+}
+
+.div-boxen a {
+    margin: auto;
+    padding: auto;
+    border: 5px solid green;
 }
 
 hr {
-    color: plum;
+    color: lightgreen;
 }
 
 a:hover {
