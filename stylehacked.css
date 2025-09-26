@@ -1,0 +1,80 @@
+:root {
+    --hacker-green: #00ff41;
+    --background-black: #1a1a1a;
+}
+
+
+body {
+    background-color: var(--background-black);
+    color: var(--hacker-green);
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 1.25em;
+    text-shadow: 0 0 0.3125em var(--hacker-green);
+    overflow: hidden;
+
+}
+
+.terminal {
+    width: 100%;
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 2.5em;
+    border: 0.1em solid var(--hacker-green);
+    box-shadow: 0 0 1.2em rgba(0, 255, 65, 0.7);
+}
+
+
+.hacked-text {
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.87em;
+    animation: glitch 1.5s infinite;
+}
+
+
+.blink,
+.prompt {
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-5px, -5px);
+    }
+
+    60% {
+        transform: translate(3px, 3px);
+    }
+
+    80% {
+        transform: translate(0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
