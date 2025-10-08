@@ -1,8 +1,12 @@
 /* Kommentar Test */
 /* Navigation Bar */
+html {
+    scroll-behavior: smooth;
+}
+
 .topnav {
     background-color: black;
-    overflow: hidden;
+    
     display: flex;
     justify-content: left;
     position: sticky;
@@ -43,6 +47,8 @@ body {
     margin: 1em;
     background-color: black;
     font-size: 150%;
+    overflow-x: hidden;
+
     color: rgba(0, 255, 65, 0.7);
 }
 
@@ -52,12 +58,11 @@ header {
     color: rgba(0, 255, 65, 0.7);
 }
 
-h1 {
+header h1 {
     color: rgba(0, 255, 65, 0.7);
     text-align: center;
     font-family: 'Hack', monospace;
-    width: 25em;
-    margin: auto;
+
 }
 
 div {
