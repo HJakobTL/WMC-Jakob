@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7em;
+}
+
+.container>* {
+    border: solid 2px #333;
+    padding: 0.5em;
+}
+
+#heading {
+    grid-column: 1 / -1;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
