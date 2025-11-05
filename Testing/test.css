@@ -1,0 +1,48 @@
+.grid-container {
+    display: grid;
+    margin: autoS;
+    grid-template-columns: repeat(15%, 1fr);
+    grid-template-rows: repeat(1fr, 5fr, 1fr);
+    grid-template-areas:
+        "header header"
+        "side main"
+        "side footer";
+    gap: 12px;
+}
+
+.grid-container>* {
+    border: 1px solid #000;
+    padding: 20px;
+    font-size: 150%;
+}
+
+@media screen and (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .side {
+        display: none;
+    }
+}
+
+.header {
+    grid-area: header;
+}
+
+.side {
+    grid-area: side;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}

@@ -33,12 +33,6 @@ html {
   color: black;
 }
 
-/* Font Import */
-@font-face {
-  font-family: "Hack";
-  src: url("path/to/Hack-Regular.ttf") format("truetype");
-}
-
 /* Body Styling */
 body {
   font-family: "Hack", monospace;
@@ -69,7 +63,7 @@ div {
   box-shadow: 0 0 0.83em rgba(0, 255, 65, 0.7);
 }
 
-section > * {
+section>* {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -101,4 +95,3 @@ footer {
   border-top: solid rgba(0, 255, 65, 0.7);
   font-size: small;
 }
-
