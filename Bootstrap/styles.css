@@ -1,0 +1,33 @@
+section>div {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #323232;
+    border: 0.125em solid grey;
+    padding: 1.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.83em rgba(0, 255, 65, 0.7);
+}
+
+/* Boxen Styling */
+.div-boxen {
+    margin: auto;
+    border: 0.2em solid gray;
+}
+
+.div-boxen a {
+    margin: auto;
+    border: 0.25em solid gray;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 2em;
+    padding: 1em;
+    text-align: center;
+    border-top: solid gray;
+    font-size: small;
+}

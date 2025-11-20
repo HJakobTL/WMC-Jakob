@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über Mich</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark text-success text-center">
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand bg-success text-white" href="#home">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#About_Me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Blogpost">Blog-Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Boxen">Boxen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Kontakt">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Grid_Flex">Grid&Flex</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="fs-5">
+    <h1 id="home" class="fw-bold display-3"><abbr title="Das ist mein Name!">Jakob Cezawa</abbr></h1>
+    <p>Eine Webseite über mich!</p>
+  </header>
+
+  <section class="fs-5">
+    <div>
+      <h2 id="About_Me" class="fw-bold display-5">About Me</h2>
+      <p>Ich mag Cybersecurity und hab auch schon einiges gelesen und gelernt.</p>
+      <p>Ein Buch was ich vor 1 Jahr gelesen habe</p>
+      <a href="https://www.mitp.de/IT-WEB/IT-Sicherheit/Hacking-oxid.html"><img
+          src="https://m.media-amazon.com/images/I/81MY6QKTiKL.jpg" style="width: 200px" alt="Mein Bild"></a>
+      <p>Auf das Bild klicken, um auf die Website des Verlages zu kommen</p>
+      <details>
+        <summary>Für Weiters, bitte öffnen!</summary>
+        <div class="spinner-border spinner-border-sm">
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <br>
+
+  <section class="fs-5">
+    <div>
+      <h2 id="Blogpost" class="fw-bold display-5">Blog-Post</h2>
+      <p>
+        Mein erster Blog-Post bzgl Cybersecurity:
+        <a href="https://medium.com/@est_21/htb-web-attacks-skills-assessment-c9b0fd6d9aca">Link</a>
+      </p>
+    </div>
+  </section>
+
+  <br>
+
+  <section class="fs-5">
+    <div class="div-boxen">
+      <h2 id="Boxen" class="fw-bold display-5">Die Boxen</h2>
+      Hallo hier ist meine Box, mit Link zu meiner Lieblingsscene aus Dexter (Link ist auch in einer Box WOW):
+      <a
+        href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fu7lozj3xywo91.jpg&f=1&nofb=1&ipt=a153d15962a2a85581aa907baea4b38eed0783c12f7938021fbb7655e453ea31">Link</a>
+    </div>
+  </section>
+
+  <br>
+
+  <section class="fs-5">
+    <div class="dropdown">
+      <h2 id="Grid_Flex" class="fw-bold display-5">Grid & Flex</h2>
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Zu den Tests
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="grid/grid_learn.html">Grid</a></li>
+        <li><a class="dropdown-item" href="flex/flex_learn.html">Flex</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <footer class="text-center fs-6">
+    <h4 id="Kontakt">Kontakt</h4>
+    <p>Email: <mark>jack.cez2004@gmail.com</mark></p>
+    <p>GitHub: <a href="https://github.com/HJakobTL/WMC-Jakob"><strong>WMC-Jakob</strong></a></p>
+    <strong>Danger!</strong> You should not <a href="../hacked.html" class="alert-link">click this link</a>
+  </footer>
+
+</body>
+
+</html>
