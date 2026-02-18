@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos-Rechner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="drunk-overlay"></div>
+    <div class="world">
+        <div class="calculator" id="calc">
+            <div class="display">
+                <div id="previous-operand" class="prev"></div>
+                <div id="current-operand" class="curr">0</div>
+            </div>
+            <button class="special" onclick="clearDisplay()">AC</button>
+            <button class="special" onclick="deleteNumber()">DEL</button>
+            <button class="op" onclick="chooseOperation('÷')">÷</button>
+            
+            <button class="num-btn" onclick="handleInput(this)">7</button>
+            <button class="num-btn" onclick="handleInput(this)">8</button>
+            <button class="num-btn" onclick="handleInput(this)">9</button>
+            <button class="op" onclick="chooseOperation('*')">×</button>
+            
+            <button class="num-btn" onclick="handleInput(this)">4</button>
+            <button class="num-btn" onclick="handleInput(this)">5</button>
+            <button class="num-btn" onclick="handleInput(this)">6</button>
+            <button class="op" onclick="chooseOperation('-')">-</button>
+            
+            <button class="num-btn" onclick="handleInput(this)">1</button>
+            <button class="num-btn" onclick="handleInput(this)">2</button>
+            <button class="num-btn" onclick="handleInput(this)">3</button>
+            <button class="op" onclick="chooseOperation('+')">+</button>
+            
+            <button onclick="appendNumber('.')">.</button>
+            <button class="num-btn" onclick="handleInput(this)">0</button>
+            <button class="span-two equals" onclick="compute()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
