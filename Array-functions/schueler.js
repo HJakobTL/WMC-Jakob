@@ -19,8 +19,12 @@ let avgGrades = students.reduce((acc, stud) =>  { return acc += stud.grade/stude
 
 let bonus = students.filter((stud) => stud.grade <= 4 && stud.age >= 17).map((stud) => `${stud.name}`).join(", ");
 
+let chain = students.reduce((acc, stud) => acc + " " + stud
+    .name,"").trim();
+
 console.log(passed);
 console.log(labels);
 console.log(passedNames);
 console.log(avgGrades);
 console.log(bonus);
+console.log(chain);
