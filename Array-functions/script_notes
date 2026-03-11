@@ -1,0 +1,212 @@
+import personen from "./personen.json" with {type : "json"}
+undefined
+> personen.length
+7
+> personen[0].name
+"Anna Mueller"
+> personen.re
+reverse      reduce       reduceRight
+> personen.reduce((acc, person) => acc + personen.weight, 0)
+NaN
+> personen.reduce((acc, person) => acc + personen.gewicht, 0)
+NaN
+> personen.reduce((acc, person) => acc + person.gewicht, 0)
+480
+> personen.map
+[Function: map]
+> personen[0]
+{
+  id: 1,
+  name: "Anna Mueller",
+  alter: 28,
+  groesse: 168,
+  geburtsdatum: "1996-03-15",
+  herkunft: "Deutschland",
+  gewicht: 62
+}
+> let p1 = personen[0]
+undefined
+> p1
+{
+  id: 1,
+  name: "Anna Mueller",
+  alter: 28,
+  groesse: 168,
+  geburtsdatum: "1996-03-15",
+  herkunft: "Deutschland",
+  gewicht: 62
+}
+> p1.alter
+28
+> personen.map( (pers) => { return pers.alter  } )
+[
+  28, 35, 24, 42,
+  31, 29, 26
+]
+> personen.map( pers => { return pers.alter  } )
+[
+  28, 35, 24, 42,
+  31, 29, 26
+]
+> personen.map( pers => { return pers.gewicht  } )
+[
+  62, 78, 58, 81,
+  65, 76, 60
+]
+> personen.map( (pers,x,y,z) => { return z } )
+[
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined
+]
+> personen.map( (pers,x,y,z,a) => { return a } )
+[
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined
+]
+> personen.map( (pers,x,y,z,a,b) => { return b } )
+[
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined
+]
+> personen.map( pers =>  return false  )
+parse error: Expression expected at 1:24
+> personen.map( pers =>  return pers.name  )
+parse error: Expression expected at 1:24
+> personen.map( pers =>  pers.name  )
+[
+  "Anna Mueller",
+  "Marco Rossi",
+  "Sophie Dubois",
+  "Thomas Weber",
+  "Maria Garcia",
+  "Lars Jensen",
+  "Elena Kovalenko"
+]
+> personen.map( (pers) => { return pers.alter} )
+[
+  28, 35, 24, 42,
+  31, 29, 26
+]
+> personen.filter( (pers) => {return pers.alter < 30} )
+[
+  {
+    id: 1,
+    name: "Anna Mueller",
+    alter: 28,
+    groesse: 168,
+    geburtsdatum: "1996-03-15",
+    herkunft: "Deutschland",
+    gewicht: 62
+  },
+  {
+    id: 3,
+    name: "Sophie Dubois",
+    alter: 24,
+    groesse: 165,
+    geburtsdatum: "2000-11-08",
+    herkunft: "Frankreich",
+    gewicht: 58
+  },
+  {
+    id: 6,
+    name: "Lars Jensen",
+    alter: 29,
+    groesse: 180,
+    geburtsdatum: "1995-12-27",
+    herkunft: "Daenemark",
+    gewicht: 76
+  },
+  {
+    id: 7,
+    name: "Elena Kovalenko",
+    alter: 26,
+    groesse: 172,
+    geburtsdatum: "1998-02-14",
+    herkunft: "Ukraine",
+    gewicht: 60
+  }
+]
+> personen.filter( (pers) => {return pers.alter <= 30} )
+[
+  {
+    id: 1,
+    name: "Anna Mueller",
+    alter: 28,
+    groesse: 168,
+    geburtsdatum: "1996-03-15",
+    herkunft: "Deutschland",
+    gewicht: 62
+  },
+  {
+    id: 3,
+    name: "Sophie Dubois",
+    alter: 24,
+    groesse: 165,
+    geburtsdatum: "2000-11-08",
+    herkunft: "Frankreich",
+    gewicht: 58
+  },
+  {
+    id: 6,
+    name: "Lars Jensen",
+    alter: 29,
+    groesse: 180,
+    geburtsdatum: "1995-12-27",
+    herkunft: "Daenemark",
+    gewicht: 76
+  },
+  {
+    id: 7,
+    name: "Elena Kovalenko",
+    alter: 26,
+    groesse: 172,
+    geburtsdatum: "1998-02-14",
+    herkunft: "Ukraine",
+    gewicht: 60
+  }
+]
+> personen.filter( (pers) => {return pers.alter <= 30} ).map((pers) => {return pers.name})
+[ "Anna Mueller", "Sophie Dubois", "Lars Jensen", "Elena Kovalenko" ]
+> personen.filter( pers => {return pers.alter <= 30} ).map (pers => {return pers.name})
+[ "Anna Mueller", "Sophie Dubois", "Lars Jensen", "Elena Kovalenko" ]
+> let namen = personen.map( p => p.name)
+undefined
+> namen
+[
+  "Anna Mueller",
+  "Marco Rossi",
+  "Sophie Dubois",
+  "Thomas Weber",
+  "Maria Garcia",
+  "Lars Jensen",
+  "Elena Kovalenko"
+]
+> namen.slice()
+[
+  "Anna Mueller",
+  "Marco Rossi",
+  "Sophie Dubois",
+  "Thomas Weber",
+  "Maria Garcia",
+  "Lars Jensen",
+  "Elena Kovalenko"
+]
+> namen.slice(0,3)
+[ "Anna Mueller", "Marco Rossi", "Sophie Dubois" ]
+> namen.slice(2,4)
+[ "Sophie Dubois", "Thomas Weber" ]

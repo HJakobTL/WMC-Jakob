@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Anna Mueller",
+        "alter": 28,
+        "groesse": 168,
+        "geburtsdatum": "1996-03-15",
+        "herkunft": "Deutschland",
+        "gewicht": 62
+    },
+    {
+        "id": 2,
+        "name": "Marco Rossi",
+        "alter": 35,
+        "groesse": 182,
+        "geburtsdatum": "1989-07-22",
+        "herkunft": "Italien",
+        "gewicht": 78
+    },
+    {
+        "id": 3,
+        "name": "Sophie Dubois",
+        "alter": 24,
+        "groesse": 165,
+        "geburtsdatum": "2000-11-08",
+        "herkunft": "Frankreich",
+        "gewicht": 58
+    },
+    {
+        "id": 4,
+        "name": "Thomas Weber",
+        "alter": 42,
+        "groesse": 175,
+        "geburtsdatum": "1982-05-19",
+        "herkunft": "Oesterreich",
+        "gewicht": 81
+    },
+    {
+        "id": 5,
+        "name": "Maria Garcia",
+        "alter": 31,
+        "groesse": 170,
+        "geburtsdatum": "1993-09-03",
+        "herkunft": "Spanien",
+        "gewicht": 65
+    },
+    {
+        "id": 6,
+        "name": "Lars Jensen",
+        "alter": 29,
+        "groesse": 180,
+        "geburtsdatum": "1995-12-27",
+        "herkunft": "Daenemark",
+        "gewicht": 76
+    },
+    {
+        "id": 7,
+        "name": "Elena Kovalenko",
+        "alter": 26,
+        "groesse": 172,
+        "geburtsdatum": "1998-02-14",
+        "herkunft": "Ukraine",
+        "gewicht": 60
+    }
+]
