@@ -1,77 +1,360 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jakob Cezawa – WMC Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <canvas id="matrix-canvas"></canvas>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Über Mich</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Syriac+Western:wght@100..900&display=swap"
-    rel="stylesheet">
-</head>
+        <nav class="topnav">
+            <a class="active" href="#home">// Home</a>
+            <a href="#about">// About</a>
+            <a href="#blog">// Blog</a>
+            <a href="#github-repos"
+                >// GitHub Repos <span class="nav-badge">LIVE</span></a
+            >
+            <a href="#boxen">// Boxen</a>
+            <a href="#kontakt">// Kontakt</a>
+            <a href="Bootstrap/index.html">// Bootstrap</a>
+        </nav>
 
-<body>
-  <nav class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#About_Me">About Me</a>
-    <a href="#Blogpost">Blog-Post</a>
-    <a href="#Boxen">Boxen</a>
-    <a href="#Kontakt">Kontakt</a>
-    <a href="/Bootstrap/index.html">Bootstrap</a>
-  </nav>
+        <header id="home">
+            <div class="hero-label">&gt; root@wmc-jakob:~$ whoami</div>
+            <h1 class="hero-name glitch" data-text="JAKOB CEZAWA">
+                JAKOB CEZAWA
+            </h1>
+            <p class="hero-sub">
+                Cybersecurity &amp; Web Development <span class="cursor"></span>
+            </p>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <div class="val" id="stat-threats">—</div>
+                    <div class="lbl">Repos gefunden</div>
+                </div>
+                <div class="stat-box">
+                    <div class="val">4AAIF</div>
+                    <div class="lbl">Klasse</div>
+                </div>
+                <div class="stat-box">
+                    <div class="val">WMC</div>
+                    <div class="lbl">Fach</div>
+                </div>
+                <div class="stat-box">
+                    <div class="val">2026</div>
+                    <div class="lbl">Jahr</div>
+                </div>
+            </div>
+        </header>
 
-  <header>
-    <h1 id="home">Jakob Cezawa</h1>
-    <p>Eine Webseite über mich!</p>
-  </header>
+        <main>
+            <section id="about">
+                <div class="section-header">
+                    <div class="section-dot"></div>
+                    <h2>About Me</h2>
+                </div>
+                <div class="section-body">
+                    <div class="about-grid">
+                        <div>
+                            <div class="book-card">
+                                <a
+                                    href="https://www.mitp.de/IT-WEB/IT-Sicherheit/Hacking-oxid.html"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <img
+                                        src="https://m.media-amazon.com/images/I/81MY6QKTiKL.jpg"
+                                        alt="Hacking Buch Cover"
+                                    />
+                                    <p style="margin-top: 8px; font-size: 11px">
+                                        Hacking – mitp Verlag
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Ich bin Jakob Cezawa, Schüler der 4AAIF. Ich
+                                interessiere mich leidenschaftlich für
+                                Cybersecurity – insbesondere für offensive
+                                Sicherheit, Netzwerkanalyse und Web-Exploits.
+                            </p>
+                            <p>
+                                Vor einem Jahr habe ich das nebenstehende Buch
+                                gelesen, das meine Begeisterung für das Thema
+                                weiter vertieft hat. Klicke auf das Cover, um
+                                auf die Verlagsseite zu gelangen.
+                            </p>
+                            <details>
+                                <summary>Weitere Infos anzeigen</summary>
+                                <p>Haben Sie gedacht da kommt noch was?</p>
+                                <img
+                                    class="troll-img"
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F5%2Ff%2F1%2F657000.jpg&f=1&nofb=1&ipt=b8ff1da844440df1a6126a83868a69a70521fa672c01d822acc916b3e27d82e5"
+                                    alt="Trollface"
+                                />
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <section>
-    <div>
-      <h2 id="About_Me">About Me</h2>
-      <p>Ich mag Cybersecurity und hab auch schon einiges gelesen und gelernt.</p>
-      <p>Ein Buch was ich vor 1 Jahr gelesen habe</p>
-      <a href="https://www.mitp.de/IT-WEB/IT-Sicherheit/Hacking-oxid.html"><img
-          src="https://m.media-amazon.com/images/I/81MY6QKTiKL.jpg" style="width: 200px" alt="Mein Bild"></a>
-      <p>Auf das Bild klicken, um auf die Website des Verlages zu kommen</p>
-      <details>
-        <summary>Für Weiters, bitte öffnen!</summary>
-        <p>Haben Sie gedacht da kommt noch was?</p>
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F5%2Ff%2F1%2F657000.jpg&f=1&nofb=1&ipt=b8ff1da844440df1a6126a83868a69a70521fa672c01d822acc916b3e27d82e5"
-          style="width: 200px" alt="Trollface">
-      </details>
-    </div>
-  </section>
+            <section id="blog">
+                <div class="section-header">
+                    <div class="section-dot"></div>
+                    <h2>Blog-Post</h2>
+                </div>
+                <div class="section-body">
+                    <div class="blog-card">
+                        <div class="blog-title">
+                            HTB Web Attacks – Skills Assessment
+                        </div>
+                        <div class="blog-meta">
+                            Mein erster öffentlicher Blog-Post über
+                            Cybersecurity &amp; HackTheBox
+                        </div>
+                        <p style="margin-top: 10px; font-size: 13px">
+                            Eine detaillierte Analyse der Web-Angriffs-Methoden
+                            aus dem HTB-Training, inklusive SQL-Injection, XSS
+                            und weitere Techniken.
+                        </p>
+                        <a
+                            href="https://medium.com/@est_21/htb-web-attacks-skills-assessment-c9b0fd6d9aca"
+                            target="_blank"
+                            rel="noopener"
+                            >→ Zum Blog-Post auf Medium</a
+                        >
+                    </div>
+                </div>
+            </section>
 
-  <br>
+            <!-- GitHub Repos Section -->
+            <section id="github-repos">
+                <div class="section-header">
+                    <div
+                        class="section-dot"
+                        style="
+                            background: var(--primary);
+                            box-shadow: 0 0 8px var(--primary);
+                        "
+                    ></div>
+                    <h2>GitHub – Open Source & Security Repos</h2>
+                </div>
 
-  <section>
-    <div>
-      <h2 id="Blogpost">Blog-Post</h2>
-      <p>
-        Mein erster Blog-Post bzgl Cybersecurity:
-        <a href="https://medium.com/@est_21/htb-web-attacks-skills-assessment-c9b0fd6d9aca">Link</a>
-      </p>
-    </div>
-  </section>
+                <div class="section-body">
+                    <div class="live-ticker">
+                        <div class="live-dot"></div>
+                        <div class="ticker-text" id="ticker-text">
+                            Verbinde mit GitHub API…
+                        </div>
+                    </div>
 
-  <br>
+                    <div class="api-controls">
+                        <div class="ctrl-group">
+                            <label for="search-input">Freitext-Suche</label>
+                            <input
+                                type="text"
+                                id="search-input"
+                                placeholder="z.B. kernel, exploit, rootkit …"
+                            />
+                        </div>
+                        <div class="ctrl-group">
+                            <label for="search-field">Thema</label>
+                            <select id="search-field">
+                                <option
+                                    value="topic:linux language:c stars:>1000"
+                                >
+                                    Linux Kernel (C)
+                                </option>
+                                <option value="topic:hacking stars:>500">
+                                    Hacking Tools
+                                </option>
+                                <option value="topic:cybersecurity stars:>500">
+                                    Cybersecurity
+                                </option>
+                                <option value="topic:ctf stars:>200">
+                                    CTF Tools
+                                </option>
+                                <option value="topic:malware stars:>100">
+                                    Malware Analysis
+                                </option>
+                                <option
+                                    value="topic:penetration-testing stars:>200"
+                                >
+                                    Pen Testing
+                                </option>
+                                <option value="topic:exploit stars:>100">
+                                    Exploits
+                                </option>
+                            </select>
+                        </div>
+                        <div class="ctrl-group">
+                            <label for="country-input">Sprache filtern</label>
+                            <input
+                                type="text"
+                                id="country-input"
+                                placeholder="z.B. python, c, go …"
+                            />
+                        </div>
+                        <div class="ctrl-group">
+                            <label for="score-input">Min. Stars</label>
+                            <input
+                                type="text"
+                                id="score-input"
+                                placeholder="z.B. 1000"
+                            />
+                        </div>
+                        <div class="ctrl-group">
+                            <label for="size-select"
+                                >Ergebnisse pro Seite</label
+                            >
+                            <select id="size-select">
+                                <option value="10">10</option>
+                                <option value="20" selected>20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                        <div class="ctrl-group">
+                            <label for="sort-select">Sortierung</label>
+                            <select id="sort-select">
+                                <option value="-score">Meiste Stars</option>
+                                <option value="-date">
+                                    Zuletzt aktualisiert
+                                </option>
+                                <option value="date">Älteste zuerst</option>
+                            </select>
+                        </div>
+                    </div>
 
-  <section id="Boxen">
-    <div class="div-boxen">
-      <h2>Die Boxen</h2>
-      Hallo hier ist meine Box, mit Link zu meiner Lieblingsscene aus Dexter (Link ist auch in einer Box WOW):
-      <a
-        href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fu7lozj3xywo91.jpg&f=1&nofb=1&ipt=a153d15962a2a85581aa907baea4b38eed0783c12f7938021fbb7655e453ea31">Link</a>
-    </div>
-  </section>
+                    <div class="btn-row">
+                        <button class="btn" id="fetch-btn">
+                            ▶ Query ausführen
+                        </button>
+                        <button class="btn" id="latest-btn">
+                            ⟳ Top Repos laden
+                        </button>
+                        <button class="btn btn-danger" id="clear-btn">
+                            ✕ Löschen
+                        </button>
+                    </div>
 
-  <footer id="Kontakt">
-    <h2>Kontakt</h2>
-    <p>Email: jack.cez2004@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/HJakobTL/WMC-Jakob">WMC-Jakob</a></p>
-    <p>Nicht auf diesen Link drücken: <a href="hacked.html">Link</a></p>
-  </footer>
+                    <div class="loading-bar" id="loading-bar"></div>
 
-</body>
+                    <div
+                        class="chart-grid"
+                        id="stats-charts"
+                        style="display: none; margin-bottom: 24px"
+                    >
+                        <div>
+                            <div class="chart-title">Top Sprachen</div>
+                            <div id="country-chart"></div>
+                        </div>
+                        <div>
+                            <div class="chart-title">Stars-Verteilung</div>
+                            <div id="score-chart"></div>
+                        </div>
+                    </div>
+
+                    <div id="results-table-wrap">
+                        <table id="results-table">
+                            <thead>
+                                <tr>
+                                    <th>#ID</th>
+                                    <th>Stars</th>
+                                    <th>Repository</th>
+                                    <th>Sprache</th>
+                                    <th>Topic</th>
+                                    <th>Aktualisiert</th>
+                                </tr>
+                            </thead>
+                            <tbody id="results-body">
+                                <tr>
+                                    <td
+                                        colspan="6"
+                                        style="
+                                            color: var(--muted);
+                                            text-align: center;
+                                            padding: 30px;
+                                        "
+                                    >
+                                        Noch keine Daten geladen. Query
+                                        ausführen oder "Top Repos laden"
+                                        klicken.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div
+                        class="pagination"
+                        id="pagination-wrap"
+                        style="display: none"
+                    >
+                        <button class="btn" id="prev-btn">◀ Zurück</button>
+                        <button class="btn" id="next-btn">Weiter ▶</button>
+                        <span class="page-info" id="page-info"></span>
+                    </div>
+
+                    <div class="status-line">
+                        <span id="status-msg">Bereit.</span>
+                        <span id="result-count"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="boxen">
+                <div class="section-header">
+                    <div class="section-dot"></div>
+                    <h2>Die Boxen</h2>
+                </div>
+                <div class="section-body">
+                    <div class="boxen-grid" id="boxen-grid"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="kontakt">
+            <div class="footer-header">// Kontakt</div>
+            <div class="contact-row">
+                <span class="lbl">Email:</span>
+                <a href="mailto:jack.cez2004@gmail.com"
+                    >jack.cez2004@gmail.com</a
+                >
+            </div>
+            <div class="contact-row">
+                <span class="lbl">GitHub:</span>
+                <a
+                    href="https://github.com/HJakobTL/WMC-Jakob"
+                    target="_blank"
+                    rel="noopener"
+                    >HJakobTL/WMC-Jakob</a
+                >
+            </div>
+            <div class="contact-row">
+                <span class="lbl">⚠️ Warnung:</span>
+                <a class="secret-link" href="hacked.html"
+                    >Nicht auf diesen Link drücken</a
+                >
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Jakob Cezawa &nbsp;|&nbsp; WMC Portfolio
+                &nbsp;|&nbsp; Powered by
+                <a
+                    href="https://docs.github.com/en/rest"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub REST API</a
+                >
+            </div>
+        </footer>
+    </body>
 </html>
